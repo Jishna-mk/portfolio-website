@@ -1,0 +1,75 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio website</title>
+    <link rel="stylesheet" href="{%static 'style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <h2 class="logo">PortFo<span>lio</span></h2><br><br>
+            <ul>
+                <li><a href="{%url 'home'%}">HOME</a></li>
+                <li><a href="{%url 'about'%}">ABOUT</a></li>
+                <li><a href="{%url 'skills'%}">SKILLS</a></li>
+                <li><a href="{%url 'contact'%}">CONTACT</a></li>
+                
+            </ul>
+        </nav>
+         
+            <div class="detal">
+                 <h1>I'am Jishna <span>mk</span></h1><br><br>
+                 <h3>I'am a web devoloper</h3><br><br>
+                 <p>This is my official portfolio website <br>
+                  to shows my details and work.</p><br><br>
+                  
+                 <a href="#">DOWNLOAD CV</a>
+                 <div class="images">
+                    <img src="data:image/jpeg;base64,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" alt="image2" class="shape" >
+                 </div>
+                
+                 
+                
+            </div>
+           
+    </div>
+     <!-- About section -->
+     {% comment %} <section class="about">
+        <div class="about-text">
+            <h4>About Me</h4>
+            <h5>Python Django <span>Developer</span></h5>
+            <p>I am a Back End devoloper using<b>Python Django.</b>I make the website more interactive and accesibble to all users. <br>
+            </p>
+            <p>EDUCATION : Bsc in Electronics <br>University of Calicut</p>
+            
+            
+            <button type="button">Let's Talk</button>
+        </div>
+     </section> {% endcomment %}
+     <!-- contact section -->
+     {% comment %} <div class="contact">
+        <p>Let Me Get You A Beautiful Website.</p>
+        <a  class="button-one"href=""><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://mail.google.com/mail/">jishnamk9@gmail.com</a><br>
+        <a class="button-two" href="#">Hire Me</a>
+     </div> {% endcomment %}
+     <!-- footer start -->
+     <footer>
+        <p>Jishna <span>mk</span></p>
+        <p>stay connected with</p>
+        <div class="social">
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <p class="end">By Jishna mk</p>
+     </footer>
+</body>
+</html>
+
